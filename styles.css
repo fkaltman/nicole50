@@ -3,18 +3,49 @@ body {
   }
 
   h1 {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    font-size: 30px !important;
   }
-
+  
+  h4{
+    margin-top: 10px;
+    padding: 0px 200px 120px;
+    font-size: 18px !important;
+  }
+  
   .gift-row {
-    margin-left: -80px;
-    padding-top: 100px;
+    /* margin-left: -80px; */
+    padding: 100px auto 0px;
+  }
+  
+  @media (max-width: 1000px) { 
+    .gift-row {
+      display: flex;
+      flex-flow: column;
+      padding-top: 100px;
+    }
+    
+    h1 {
+      font-size: 20px !important;
+      padding-top: 40px;
+    }
+    
+    h4 {
+      padding: 0px 40px;
+      font-size: 16px !important;
+    }
+
+    .box {
+      margin: 0 auto 160px;
+    }
   }
   
   .box {
     position: relative;
-    margin-left: 140px;
-    margin-top: 20px;
+    margin: 0 auto 60px;
+    /* margin-left: 140px; */
+    /* margin-top: 20px; */
   }
 
   .box::before {
